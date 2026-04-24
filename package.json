@@ -1,0 +1,38 @@
+{
+  "name": "express-url-shortener-api",
+  "version": "1.0.0",
+  "description": "URL shortening service with custom aliases, click analytics, and rate limiting. Handles 10K+ redirects/day with Redis caching.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "pnpm exec tsx watch src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamnathan-dev/express-url-shortener-api.git"
+  },
+  "author": "Nathaniel Joseph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamnathan-dev/express-url-shortener-api/issues"
+  },
+  "homepage": "https://github.com/iamnathan-dev/express-url-shortener-api#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.5.0",
+    "nanoid": "^5.1.9"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.6.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsc-node": "^0.0.3",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  }
+}
