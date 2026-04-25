@@ -2,8 +2,7 @@
   "name": "express-url-shortener-api",
   "version": "1.0.0",
   "description": "URL shortening service with custom aliases, click analytics, and rate limiting. Handles 10K+ redirects/day with Redis caching.",
-  "main": "index.js",
-  "type": "module",
+  "main": "server.js",
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
@@ -23,6 +22,8 @@
   "dependencies": {
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
+    "express-rate-limit": "^8.4.1",
+    "ioredis": "^5.10.1",
     "mongoose": "^9.5.0",
     "nanoid": "^5.1.9"
   },
